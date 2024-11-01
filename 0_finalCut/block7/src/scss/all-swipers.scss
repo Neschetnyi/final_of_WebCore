@@ -1,0 +1,98 @@
+.h2-container {
+  border-top: 1px $navy solid;
+  background: $h--gradient;
+}
+
+.swiper {
+  min-width: 320px;
+
+  &__hedder {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-family: 'TTLakes';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1rem;
+    color: $font-secondary--color;
+    padding: 20px;
+    padding-left: 34px;
+    white-space: normal;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__main {
+    display: flex;
+    padding: 0;
+    margin-left: 32px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  &__element {
+    display: flex;
+    background-color: $background-secondary--color;
+    border: 1px solid $swiper-elements--border-color;
+    border-radius: 8px;
+    flex-basis: auto;
+    flex-shrink: 0;
+  }
+
+  &__a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/go.svg);
+    margin-right: 15px;
+  }
+
+  &__img {
+    margin-left: 15px;
+  }
+}
+
+.swiper-pagination {
+  padding-bottom: 5px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: $swiper-pagination-bullets-color;
+}
+
+.show-all {
+  background-color: $background-main--color;
+  cursor: pointer;
+
+  &--font {
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-size: 1rem;
+    color: $font-havy-color;
+  }
+
+  &--positioning {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    margin-left: 32px;
+    margin-bottom: 1.3em;
+    margin-top: 22px;
+  }
+
+  &--display-none {
+    display: none;
+  }
+}
+
+.swiper-shadow--display--none {
+  display: none;
+}

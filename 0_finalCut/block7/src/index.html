@@ -7,10 +7,7 @@
       name="description"
       content="Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя."
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>CPS</title>
   </head>
@@ -20,7 +17,7 @@
       class="burger-menu-cover burger-menu-cover--desktop burger-menu-cover--display--none"
     >
       <aside
-        class="burger-menu burger-menu--shadow burger-menu--shadow-descktop burger-menu--mob"
+        class="burger-menu burger-menu--transform burger-menu--shadow burger-menu--shadow-descktop burger-menu--mob"
         ><div class="burger-menu__innercontainer">
           <div class="burger-menu__container">
             <div
@@ -76,10 +73,10 @@
             class="bottom-burger bottom-burger--transform burger-menu--trnsition--none"
           >
             <div class="container-bottom-burger">
-              <button class="button burger-menu__button">
+              <button class="button burger-menu__button call-button">
                 <img src="img/call.svg " alt="позвонить нам" />
               </button>
-              <button class="button burger-menu__button">
+              <button class="button chat-button burger-menu__button">
                 <img src="img/chat.svg" alt="чат" />
               </button>
               <button class="button burger-menu__button">
@@ -96,7 +93,7 @@
               >
             </div>
             <div class="language">
-              <a href="" class="language__lang language__lang--active">RU</a>
+              <a href="" class="language__lang">RU</a>
               <a href="" class="language__lang">EN</a>
               <a href="" class="language__lang">CH</a>
             </div>
@@ -104,6 +101,127 @@
         </div>
       </aside>
       <div class="burger-menu__white-space"></div>
+    </div>
+
+    <div
+      class="feedback-menu-cover feedback-menu-cover--desktop feedback-menu-cover--display--none"
+    >
+      <aside
+        class="feedback-menu feedback-menu--shadow feedback-menu--shadow-descktop feedback-menu--mob"
+        ><div class="feedback-menu__innercontainer">
+          <div class="feedback-menu__container">
+            <div
+              class="feedback-menu__header feedback-menu__header--transform feedback-menu--trnsition--none"
+            >
+              <div class="feedback-menu__header-container">
+                <button
+                  class="feedback-menu__button feedback-menu__button-close feedback-menu__button-close--hide button button"
+                >
+                  <img src="img/close.svg" alt="close" />
+                </button>
+              </div>
+              <div class="title-feedback__container">
+                <img src="img/highlight.svg" alt="" />
+                <h1 class="title-feedback__h1 title-feedback__h1--font"
+                  >Обратная связь</h1
+                >
+              </div>
+            </div>
+            <div
+              class="form-container form-container--transform feedback-menu--trnsition--none"
+            >
+              <form class="form-feedback">
+                <fieldset class="form-feedback__fieldset">
+                  <input
+                    type="text"
+                    class="form-feedback__input"
+                    placeholder="Имя"
+                  />
+                  <input
+                    type="text"
+                    class="form-feedback__input"
+                    placeholder="Телефон"
+                  />
+                  <input
+                    type="text"
+                    class="form-feedback__input"
+                    placeholder="Электронная почта"
+                  />
+                  <textarea
+                    class="form-feedback__textarea"
+                    placeholder="Сообщение"
+                  ></textarea>
+                  <p class="form-feedback__p"
+                    >Нажимая “отправить”, вы даете согласие на
+                    <a href="">обработку персональных данных</a> и соглашаетесь
+                    с нашей <a href="">политикой конфиденциальности</a></p
+                  >
+                  <input
+                    type="submit"
+                    class="form-feedback__submit button"
+                    value="ОТПРАВИТЬ      "
+                  />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="feedback-menu__white-space"></div>
+    </div>
+
+    <div
+      class="call-menu-cover call-menu-cover--desktop call-menu-cover--display--none"
+    >
+      <aside
+        class="call-menu call-menu--shadow call-menu--shadow-descktop call-menu--mob"
+        ><div class="call-menu__innercontainer">
+          <div class="call-menu__container">
+            <div
+              class="call-menu__header call-menu__header--transform call-menu--trnsition--none"
+            >
+              <div class="call-menu__header-container">
+                <button
+                  class="call-menu__button call-menu__button-close call-menu__button-close--hide button button"
+                >
+                  <img src="img/close.svg" alt="close" />
+                </button>
+              </div>
+              <div class="title-call__container">
+                <img src="img/highlight.svg" alt="" />
+                <h1 class="title-call__h1 title-call__h1--font"
+                  >Заказать звонок</h1
+                >
+              </div>
+            </div>
+            <div
+              class="form-call-container form-call-container--transform call-menu--trnsition--none"
+            >
+              <form class="form-call">
+                <fieldset class="form-call__fieldset">
+                  <input
+                    type="text"
+                    class="form-call__input"
+                    placeholder="Телефон"
+                  />
+
+                  <p class="form-call__p"
+                    >Нажимая “отправить”, вы даете согласие на
+                    <a href="">обработку персональных данных</a> и соглашаетесь
+                    с нашей <a href="">политикой конфиденциальности</a></p
+                  >
+                  <input
+                    type="submit"
+                    class="form-call__submit button"
+                    value="ОТПРАВИТЬ      "
+                  />
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="call-menu__white-space"></div>
     </div>
 
     <header class="header">
@@ -135,12 +253,12 @@
             class="upper-menu__container-inner upper-menu__container-inner--display--flex upper-menu__container-inner--display--none"
           >
             <button
-              class="button upper-menu__button upper-menu__button--positioning"
+              class="button upper-menu__button upper-menu__button--positioning call-button"
             >
               <img src="img/call.svg" alt="позвонить нам" />
             </button>
             <button
-              class="button upper-menu__button upper-menu__button--positioning"
+              class="button chat-button upper-menu__button upper-menu__button--positioning"
             >
               <img src="img/chat.svg" alt="чат" />
             </button>
@@ -203,6 +321,7 @@
           <ul class="side-menu__ul side-menu__ul--descktop">
             <li>
               <a
+                href="#tech"
                 tabindex="0"
                 class="side-menu__button side-menu__button--positioning side-menu__button--font"
                 >Ремонтируемые устройства</a
@@ -210,6 +329,7 @@
             </li>
             <li>
               <a
+                href="#brands"
                 tabindex="0"
                 class="side-menu__button side-menu__button--positioning side-menu__button--font"
                 >Ремонтируемые бренды</a
@@ -217,9 +337,10 @@
             </li>
             <li>
               <a
+                href="#prices"
                 tabindex="0"
                 class="side-menu__button side-menu__button--positioning side-menu__button--font"
-                >Цены на усдуги</a
+                >Цены на услуги</a
               >
             </li>
             <li>
@@ -276,20 +397,20 @@
         </article>
       </section>
 
-      <section class="repair-brands">
+      <section class="repair-brands" id="brands">
         <div class="h2-container">
           <h2 class="swiper__hedder">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
         </div>
-        <div class="swiper swiper__container">
-          <div class="swiper__main swiper-wrapper"></div>
-          <div class="swiper-shadow"></div>
+        <div class="swiper swiper__container repair-brands__swiper">
+          <div class="swiper__main repair-brands__main swiper-wrapper"></div>
+          <div class="repair-brands--shadow"></div>
         </div>
         <button class="show-all show-all--font show-all--positioning">
           <img src="img/expand.svg" /><span>Показать всё</span>
         </button>
 
         <template id="repair-brands-template">
-          <div class="swiper__element swiper-slide">
+          <div class="swiper__element swiper-slide repair-brands__element">
             <img src="img/Apple.png" class="swiper__img" alt="" /><a
               href=""
               class="swiper__a button"
@@ -297,10 +418,94 @@
           </div>
         </template>
       </section>
+
+      <section class="repair-tech" id="tech">
+        <div class="h2-container">
+          <h2 class="swiper__hedder">РЕМОНТ РАЗЛИЧНЫХ ВИДОВ ТЕХНИКИ</h2>
+        </div>
+        <div class="swiper swiper__container repair-tech__swiper">
+          <div class="swiper__main repair-tech__main swiper-wrapper"></div>
+          <div class="repair-tech--shadow"></div>
+        </div>
+        <button class="show-all show-all2 show-all--font show-all--positioning">
+          <img src="img/expand.svg" /><span>Показать всё</span>
+        </button>
+
+        <template id="repair-tech-template">
+          <div class="swiper__element swiper-slide repair-tech__element">
+            <div></div><a href="" class="swiper__a repair-tech__a button"></a>
+          </div>
+        </template>
+      </section>
+
+      <section class="repair-prices" id="prices">
+        <div class="h2-container">
+          <h2 class="swiper__hedder">ЦЕНЫ НА УСЛУГИ</h2>
+        </div>
+        <div class="table-hedder">
+          <div class="table-text">Ремонтные услуги</div>
+          <div class="table-price">Цена</div>
+          <div class="table-time">Срок</div>
+          <div class="table-button"></div>
+        </div>
+
+        <div
+          class="swiper swiper__container repair-prices__container repair-prices__swiper"
+        >
+          <div class="swiper__main repair-prices__main swiper-wrapper"></div>
+          <div class="repair-prices--shadow"></div>
+        </div>
+
+        <div class="repair-prices__footer">
+          <p class="repair-prices__p"
+            >Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.</p
+          >
+          <button class="repair-prices__comerse button"
+            ><span
+              >Получить коммерческое предложение
+              <span class="comerse-arrow"></span></span
+          ></button>
+        </div>
+
+        <template id="repair-prices-template">
+          <div class="swiper__element swiper-slide repair-prices__element">
+            <div class="prices__element-content">
+              <div class="prices-text">
+                <div class="prices-element__label">Ремонтные услуги</div>
+                <div class="prices-element__content"></div>
+              </div>
+              <div class="prices-price">
+                <div class="prices-element__label">Цена</div>
+                <div class="prices-element__content"></div>
+              </div>
+              <div class="prices-time">
+                <div class="prices-element__label">Срок</div>
+                <div class="prices-element__content"></div>
+              </div>
+              <div class="order">
+                <a href="" class="swiper__a repair-prices__a button"
+                  >ЗАКАЗАТЬ <span></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </template>
+      </section>
     </main>
 
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <footer class="footer">
+      <div class="footer_block-left"
+        >© 2019 CPS Разработано командой Apesong
+      </div>
+      <div class="footer_block-center">Политика конфиденциальности</div>
+      <div class="footer_block-right"
+        >Информация, размещенная на данной странице, не является публичной
+        офертой</div
+      >
+    </footer>
+
     <script src="js/index.js"></script>
   </body>
 </html>

@@ -2,6 +2,7 @@ export const myVariable = 'Block 7'
 
 var readNext = document.querySelector('.expand-button')
 var article__text = document.querySelector('.article__text')
+
 //click event
 readNext.children[0].src = 'img/expand.svg'
 readNext.children[1].textContent = 'Читать далее'

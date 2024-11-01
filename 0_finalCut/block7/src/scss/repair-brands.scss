@@ -1,0 +1,53 @@
+.repair-brands {
+  margin: 0;
+  padding: 0;
+  @media (min-width: 1120px) {
+    padding-left: 320px;
+  }
+
+  .repair-brands--shadow {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    box-shadow: -10px 0 20px 15px $background-secondary--color;
+    height: 72px;
+    width: 10px;
+    z-index: 100;
+  }
+}
+
+.repair-brands__main {
+  &--mob {
+    height: 80px;
+    overflow: visible;
+    flex-wrap: nowrap;
+  }
+
+  &--laptop {
+    column-gap: 32px;
+    row-gap: 16px;
+    height: 170px;
+    min-height: 80px;
+  }
+
+  &--overfolw--hidden {
+    overflow: visible;
+  }
+
+  &--height--fit-content {
+    height: 254px;
+    min-height: 80px;
+  }
+}
+
+.repair-brands__container--mob {
+  height: 120px;
+  padding-right: 100px;
+}
+
+.repair-brands__element {
+  width: 240px;
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+}

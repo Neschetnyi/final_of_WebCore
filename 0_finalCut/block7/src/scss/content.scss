@@ -47,6 +47,7 @@
   &__button {
     background-color: $background-main--color;
     cursor: pointer;
+    text-decoration: none;
 
     &--positioning {
       display: block;

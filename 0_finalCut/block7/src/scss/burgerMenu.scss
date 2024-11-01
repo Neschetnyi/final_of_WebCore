@@ -5,12 +5,12 @@
   width: 100%;
   background-color: $background--transparency;
   z-index: 2000;
-  transition-property: opacity;
-  transition-duration: 0.3s;
+  transition-property: opacity transform;
+  transition-duration: 0.4s 0.1ms;
 
   &--display--none {
     opacity: 0;
-    z-index: -1;
+    transform: scale(0);
   }
 
   &--display--none {
@@ -23,6 +23,7 @@
   &--desktop {
     @media (min-width: 1120px) {
       width: 320px;
+      transform: scale(1);
     }
   }
 }
@@ -37,6 +38,8 @@
   margin: 0;
   z-index: 1000;
   background-color: $background-secondary--color;
+  transition-property: all;
+  transition-duration: 0.4s;
 
   &--mob {
     @media (max-width: 767.999px) {
@@ -103,6 +106,12 @@
   &__button-close--hide {
     @media (min-width: 1120px) {
       display: none;
+    }
+  }
+
+  &--transform {
+    @media (max-width: 1120px) {
+      transform: translateY(-150%);
     }
   }
 }
@@ -200,7 +209,7 @@
   font-style: normal;
   font-size: 1rem;
   color: $font-havy-color;
-  transition: 0.4s;
+  transition: 0.2s;
 
   &--active {
     color: $activ-elements--font-color;
@@ -219,9 +228,6 @@
 }
 
 .burger-menu__white-space {
-  position: absolute;
-  top: 0;
-  right: 0;
   width: calc(100% - 320px);
   height: 100vh;
   z-index: 1000;
