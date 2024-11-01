@@ -1,0 +1,7 @@
+.button {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.button:hover {
+  opacity: 50%;
+}

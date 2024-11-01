@@ -1,0 +1,294 @@
+.content {
+  background-color: $background-main--color;
+  font-family: 'TTLakes';
+  padding-top: 90px;
+
+  @media (min-width: 1120px) {
+    padding-top: 20px;
+    padding-left: 320px;
+  }
+}
+
+.title {
+  &__container {
+    display: flex;
+  }
+
+  &__h1 {
+    margin-left: 0.5em;
+
+    &--font {
+      white-space: nowrap;
+    }
+  }
+  &--positioning {
+    @media (min-width: 1120px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 40px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1119.999px) {
+      display: flex;
+    }
+
+    @media (max-width: 767.999px) {
+      display: flex;
+    }
+  }
+}
+
+.side-menu {
+  &--positioning {
+    margin-left: 1em;
+  }
+
+  &__button {
+    background-color: $background-main--color;
+    cursor: pointer;
+
+    &--positioning {
+      display: block;
+      margin-left: 0.3em;
+      padding: 0.5em;
+      border-radius: 0.5em;
+      border: 3px transparent solid;
+      outline: none;
+    }
+
+    &--font {
+      white-space: nowrap;
+      font-family: 'TTLakes';
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.2em;
+      color: $font-secondary--color;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 3px $navy solid;
+      background-color: $background-secondary--color;
+    }
+  }
+
+  &__ul--descktop {
+    @media (min-width: 1120px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+  }
+  &__ul {
+    @media (min-width: 768px) and (max-width: 1119.999px) {
+      display: flex;
+      overflow: scroll;
+      margin-left: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+    @media (max-width: 767.999px) {
+      display: flex;
+      overflow: scroll;
+      margin-left: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    &::-webkit-scrollbar {
+      @media (min-width: 768px) and (max-width: 1119.999px) {
+        width: 0;
+      }
+      @media (max-width: 767.999px) {
+        width: 0;
+      }
+    }
+  }
+}
+
+.article {
+  padding-left: 32px;
+
+  &__figure--positioning {
+    max-height: 800px;
+    margin-left: 1em;
+    margin-top: 0;
+  }
+
+  &--descktop {
+    @media (min-width: 1120px) {
+      margin-top: 1em;
+      display: flex;
+      align-items: top;
+    }
+  }
+
+  &__container {
+    &--descktop {
+      @media (min-width: 1120px) {
+        width: 50%;
+      }
+    }
+  }
+
+  &__text {
+    transition-property: all;
+    transition-duration: 0.4s;
+    color: $font-havy-color;
+    overflow: hidden;
+
+    @media (max-width: 767.999px) {
+      height: 5rem;
+    }
+
+    @media (min-width: 768px) and (max-width: 1119.999px) {
+      height: 8rem;
+    }
+
+    @media (min-width: 1120px) {
+      height: 10.6rem;
+    }
+
+    &--overflow--scroll {
+      height: 250px;
+      @media (min-width: 1120px) {
+        height: calc(100% - 50px);
+      }
+      overflow-y: scroll;
+    }
+
+    &--overflow--hidden {
+      overflow: hidden;
+    }
+  }
+
+  &__figure--descktop {
+    @media (min-width: 1120px) {
+      width: 50%;
+    }
+  }
+
+  &__figure--mob {
+    @media (max-width: 767.999px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: fit-content;
+    }
+  }
+
+  &--laptop {
+    @media (min-width: 768px) and (max-width: 1119.999px) {
+      display: flex;
+      align-items: top;
+    }
+  }
+
+  &--mob {
+    @media (max-width: 767.999px) {
+      display: block;
+    }
+  }
+}
+
+.expand-button {
+  background-color: $background-main--color;
+  cursor: pointer;
+
+  &--font {
+    font-family: 'TTLakes';
+    font-weight: 500;
+    font-size: 1rem;
+    color: $font-havy-color;
+  }
+
+  &--positioning {
+    display: flex;
+    align-items: center;
+    margin: 1.3em;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.3em;
+    padding-top: 1rem;
+  }
+}
+
+.service {
+  &__button {
+    background-color: $background-main--color;
+
+    &--font {
+      white-space: nowrap;
+      font-family: 'TTLakes' bold;
+      font-family: 'TTLakes';
+      font-weight: 500;
+      font-style: normal;
+      font-size: 1.2rem;
+      color: $font-havy-color;
+    }
+
+    &--positioning {
+      display: flex;
+      align-items: center;
+      border: 0;
+      margin-left: 0.3em;
+    }
+  }
+
+  &--font {
+    font-family: 'TTLakes' bold;
+    font-size: 5em;
+  }
+
+  &__immage--positioning {
+    margin-left: 0.4em;
+  }
+
+  &--positioning {
+    @media (min-width: 1120px) {
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+    }
+  }
+
+  &--display--none {
+    @media (min-width: 768px) and (max-width: 1119.999px) {
+      height: 0;
+      width: 0;
+      overflow: hidden;
+    }
+    @media (max-width: 767.999px) {
+      height: 0;
+      width: 0;
+      overflow: hidden;
+    }
+  }
+}
+
+.immage--descktop {
+  @media (min-width: 1120px) {
+    border-radius: 7px;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+.immage--laptop {
+  @media (min-width: 768px) and (max-width: 1119.999px) {
+    border-radius: 7px;
+    width: 45vw;
+  }
+}
+
+.immage--mob {
+  @media (max-width: 767.999px) {
+    border-radius: 0px;
+    width: 100%;
+    max-width: 360px;
+  }
+}
